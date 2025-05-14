@@ -5,6 +5,7 @@
 Bruce is meant to be a versatile ESP32 firmware that supports a ton of offensive features focusing on facilitating Red Team operations.
 It also supports m5stack products and works great with Cardputer, Sticks, M5Cores, T-Decks and T-Embeds.
 
+
 # :duck: Bruce moded features
 ## ✅ Features
 
@@ -19,6 +20,9 @@ It also supports m5stack products and works great with Cardputer, Sticks, M5Core
 > ⚠️ Don't add all modules together .
 > 
 >  ⚠️ When boot the device on a 2.4 TFT display with buttons, the colors are reversed. Go to Settings, then turn on the colors, and cancel Dim Time. .
+
+
+
 ## :bookmark_tabs: Wiki
 
 For more information on each function supported by Bruce, [read our wiki here](https://github.com/pr3y/Bruce/wiki).
