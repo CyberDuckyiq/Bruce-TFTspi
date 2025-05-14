@@ -31,6 +31,7 @@ It also supports m5stack products and works great with Cardputer, Sticks, M5Core
 | Previous Button | 33       |
 | Select Button   | 25       |
 | Escape Button   | 26       |
+
 buttons with esp
 **Note:** The other side of each button should be connected to **GND**.
 
