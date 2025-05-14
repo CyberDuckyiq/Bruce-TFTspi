@@ -34,8 +34,9 @@ flash the BINs files from [release](https://github.com/CyberDuckyiq/Bruce-TFTspi
 | Previous Button | 33       |
 | Select Button   | 25       |
 | Escape Button   | 26       |
-buttons with esp
-**Note:** The other side of each button should be connected to **GND**.
+
+>buttons with esp
+>**Note:** The other side of each button should be connected to **GND**.
 
 ## TFT SPI 2.4 or 2.8 Connection to ESP32
 
