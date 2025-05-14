@@ -8,7 +8,6 @@ It also supports m5stack products and works great with Cardputer, Sticks, M5Core
 
 # :duck: Bruce moded features
 ## ✅ Features
-
 -  Fixed touch for TFT SPI 
     The inverted touch issue on the 2.4 and 2.8 TFT SPI displays has been resolved. Previously, the touch was inverted, meaning that when you pressed the right, you pressed the left, and vice versa.
 -  buttons for TFT SPI 
@@ -16,7 +15,6 @@ It also supports m5stack products and works great with Cardputer, Sticks, M5Core
     Note: When boot the device on a 2.4 TFT display, the colors are reversed. Go to Settings, then turn on the colors, and cancel Dim Time.
 
 ## 📝 Notes
-
 > ⚠️ Don't add all modules together .
 > 
 >  ⚠️ When boot the device on a 2.4 TFT display with buttons, the colors are reversed. Go to Settings, then turn on the colors, and cancel Dim Time. .
