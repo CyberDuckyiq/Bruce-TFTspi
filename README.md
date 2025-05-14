@@ -20,6 +20,120 @@ It also supports m5stack products and works great with Cardputer, Sticks, M5Core
 > ⚠️ Don't add all modules together .
 > 
 >  ⚠️ When boot the device on a 2.4 TFT display with buttons, the colors are reversed. Go to Settings, then turn on the colors, and cancel Dim Time. .
+
+##  ADD modules for bruce with TFT (DIY)
+
+## buttons Connection to ESP32
+
+| Function        | GPIO Pin |
+| --------------- | -------- |
+| Next Button     | 32       |
+| Previous Button | 33       |
+| Select Button   | 25       |
+| Escape Button   | 26       |
+buttons with esp
+**Note:** The other side of each button should be connected to **GND**.
+
+## TFT SPI 2.4 or 2.8 Connection to ESP32
+
+| Signal       | GPIO Pin       |
+|--------------|----------------|
+| SDO (MISO)   | GPIO 12        |
+| LED          | GPIO 21        |
+| SCK          | GPIO 14        |
+| SDI (MOSI)   | GPIO 13        |
+| D/C          | GPIO 2         |
+| RESET        | EN / RESET Pin |
+| CS           | GPIO 15        |
+| GND          | GND            |
+| VCC          | 5V (or 3.3V)*   |
+
+## SD Card Connection to ESP32 
+
+| SD Card Pin | ESP32 GPIO | Description         |
+|-------------|------------|---------------------|
+| CS          | GPIO5      | Chip Select (CS)    |
+| SCK         | GPIO18     | Serial Clock (SCK)  |
+| MOSI        | GPIO23     | Master Out Slave In |
+| MISO        | GPIO19     | Master In Slave Out |
+| VCC         | 3V         | Power Supply        |
+| GND         | GND        | Ground              |
+
+> ⚠️ **Note:** The SD card must be formatted as **FAT32** for proper operation.
+
+
+
+## Direct Connection Between NRF24L01 and ESP32
+
+| NRF24L01 Pin | ESP32 GPIO | Description             |
+|--------------|-------------|--------------------------|
+| VCC          | 3.3V        | Power Supply (⚠️ Do NOT use 5V!) |
+| GND          | GND         | Ground                   |
+| CE           | GPIO22      | Chip Enable              |
+| CSN (CNS)    | GPIO27      | SPI Chip Select (CS)     |
+| SCK          | GPIO18      | SPI Clock                |
+| MOSI         | GPIO23      | SPI MOSI (Master Out)    |
+| MISO         | GPIO19      | SPI MISO (Master In)     |
+| IRQ          | Not connected or optional | Interrupt (optional) |
+
+> ⚠️ **Note:** NRF24L01 must be powered with **3.3V only**, not 5V.  
+> ⚠️ **Important:** You must **remove the SD card** when using the NRF24L01 module to avoid SPI conflicts.
+
+
+
+## Direct Connection Between CC1101 v1 and ESP32
+
+| NRF24L01 Pin | ESP32 GPIO                | Description                      |
+| ------------ | ------------------------- | -------------------------------- |
+| VCC          | 3.3V                      | Power Supply (⚠️ Do NOT use 5V!) |
+| GND          | GND                       | Ground                           |
+| GDO2         | GPIO22                    | Chip Enable                      |
+| CSN (CNS)    | GPIO27                    | SPI Chip Select (CS)             |
+| SCK          | GPIO18                    | SPI Clock                        |
+| MOSI         | GPIO23                    | SPI MOSI (Master Out)            |
+| MISO         | GPIO19                    | SPI MISO (Master In)             |
+| IRQ          | Not connected or optional | Interrupt (optional)             |
+
+
+
+## PN532 I2C Connection with ESP32 (CYD Board)
+
+| PN532 Pin | ESP32 GPIO | Description            |
+|-----------|-------------|-------------------------|
+| VCC       | 3.3V        | Power Supply (3.3V only)|
+| GND       | GND         | Ground                  |
+| SDA       | GPIO27      | I2C Data (SDA)          |
+| SCL       | GPIO22      | I2C Clock (SCL)         |
+
+> ⚠️ **Note:** Ensure PN532 is set to **I2C mode** using the onboard switch or jumpers.
+
+
+## TFT SPI 2.4 or 2.8 Connection to ESP32 for Touch
+
+| Function   | Connected to GPIO |
+| ---------- | ----------------- |
+| T_IRQ      | VP                |
+| T_OUT      | VN                |
+| T_DIN      | GPIO 32           |
+| T_CS       | GPIO 33           |
+| T_CLK      | GPIO 25           |
+| SDO (MISO) | GPIO 12           |
+| LED        | GPIO 21           |
+| SCK        | GPIO 14           |
+| SDI (MOSI) | GPIO 13           |
+| D/C        | GPIO 2            |
+| RESET      | EN / RESET        |
+| CS         | GPIO 15           |
+| GND        | GND               |
+| VCC        | 3.3V              |
+
+
+
+
+
+
+
+
 ## :bookmark_tabs: Wiki
 
 For more information on each function supported by Bruce, [read our wiki here](https://github.com/pr3y/Bruce/wiki).
