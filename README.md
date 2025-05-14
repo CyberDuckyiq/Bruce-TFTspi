@@ -21,6 +21,9 @@ It also supports m5stack products and works great with Cardputer, Sticks, M5Core
 > 
 >  ⚠️ When boot the device on a 2.4 TFT display with buttons, the colors are reversed. Go to Settings, then turn on the colors, and cancel Dim Time. .
 
+
+##  install 
+flash the BINs files from [release](https://github.com/CyberDuckyiq/Bruce-TFTspi/releases/tag/1.9.1) 
 ##  ADD modules for bruce with TFT (DIY)
 
 ## buttons Connection to ESP32
@@ -31,7 +34,6 @@ It also supports m5stack products and works great with Cardputer, Sticks, M5Core
 | Previous Button | 33       |
 | Select Button   | 25       |
 | Escape Button   | 26       |
-
 buttons with esp
 **Note:** The other side of each button should be connected to **GND**.
 
