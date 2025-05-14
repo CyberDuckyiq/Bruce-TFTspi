@@ -17,6 +17,7 @@ It also supports m5stack products and works great with Cardputer, Sticks, M5Core
 ## 📝 Notes
 
 > ⚠️ Don't add all modules together .
+> 
 >  ⚠️ When boot the device on a 2.4 TFT display with buttons, the colors are reversed. Go to Settings, then turn on the colors, and cancel Dim Time. .
 ## :bookmark_tabs: Wiki
 
